@@ -1,0 +1,89 @@
+{
+  "key": "my-app",
+  "name": "My app",
+  "description": "My very first app",
+  "baseUrl": "https://e9ca-109-252-60-120.ngrok.io",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "scopes": ["READ"],
+  "apiMigrations": {
+    "signed-install": true
+  },
+  "modules": {
+    "generalPages": [
+      {
+        "key": "teamlead-task-page-jira",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Teamlead Task"
+        },
+        "url": "/teamlead-task",
+        "conditions": [
+          {
+            "condition": "user_is_logged_in"
+          }
+        ]
+      },
+      {
+        "key": "teamlead-task-page-confluence",
+        "location": "system.header/left",
+        "name": {
+          "value": "Teamlead Task"
+        },
+        "url": "/teamlead-task",
+        "conditions": [
+          {
+            "condition": "user_is_logged_in"
+          }
+        ]
+      }
+    ],
+    "webSections": [
+      {
+        "key": "web-section",
+        "location": "admin_plugins_menu",
+        "name": {
+          "value": "Teamlead Task"
+        }
+      }
+    ],
+    "webItems": [
+      {
+        "key": "section-settings",
+        "location": "admin_plugins_menu/web-section",
+        "weight": 200,
+        "styleClasses": ["webitem", "system-present-webitem"],
+        "context": "addon",
+        "target": {
+          "type": "page"
+        },
+        "name": {
+          "value": "Settings"
+        },
+        "url": "/section-settings"
+      }
+    ],
+    "webPanels": [
+      {
+        "key": "left-panel",
+        "location": "atl.jira.view.issue.left.context",
+        "name": {
+          "value": "App panel location left side title"
+        },
+        "url": "/left-panel"
+      },
+      {
+        "key": "right-panel",
+        "location": "atl.jira.view.issue.right.context",
+        "name": {
+          "value": "Right side"
+        },
+        "url": "/right-panel"
+      }
+    ]
+  }
+}
