@@ -2,12 +2,12 @@
   "key": "my-app",
   "name": "My app",
   "description": "My very first app",
-  "baseUrl": "https://e9ca-109-252-60-120.ngrok.io",
+  "baseUrl": "https://team-lead-task.herokuapp.com",
   "authentication": {
     "type": "jwt"
   },
   "lifecycle": {
-    "installed": "/installed"
+    "installed": "installed"
   },
   "scopes": ["READ"],
   "apiMigrations": {
@@ -72,7 +72,7 @@
         "key": "left-panel",
         "location": "atl.jira.view.issue.left.context",
         "name": {
-          "value": "App panel location left side title"
+          "value": "Left side"
         },
         "url": "/left-panel"
       },
