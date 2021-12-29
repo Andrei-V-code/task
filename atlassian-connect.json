@@ -7,7 +7,7 @@
     "type": "jwt"
   },
   "lifecycle": {
-    "installed": "installed"
+    "installed": "/installed"
   },
   "scopes": ["READ"],
   "apiMigrations": {
