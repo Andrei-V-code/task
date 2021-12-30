@@ -6,6 +6,9 @@
     "react": "React",
     "react-dom": "ReactDOM"
   },
+  "engines": {
+    "node": "16.13.1"
+  },
   "main": "index.js",
   "type":"module",
   "scripts": {
