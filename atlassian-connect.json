@@ -2,7 +2,7 @@
   "key": "my-app",
   "name": "My app",
   "description": "My very first app",
-  "baseUrl": "https://team-lead-task.herokuapp.com",
+  "baseUrl": "{{localBaseUrl}}",
   "authentication": {
     "type": "jwt"
   },
